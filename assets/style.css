@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,44 +11,64 @@ html {
 
 /* ******************** style background-color ************ */
 
-header { 
+header {
     background-color: aqua;
     height: 25vh;
     margin: 5px;
 }
 
+section{
+    display: flex;
+    flex-wrap: wp;
+}
+
+
 aside {
-    background-color:#9f8dff;
-    height: 50vh;
+    background-color: #9f8dff;
+    height: 51.5vh;
     margin: 5px;
+    width: 45.7vw;
+    order: 1;
+    align-self: stretch;
+}
+
+section section {
+    display: flex;
+    flex-wrap: wrap;
+    order: 0;
 }
 
 section article {
-        height: 25vh;
+    height: 25vh;
     margin: 5px;
+    width: 37vw;
 
 }
+
 section article:nth-of-type(1) {
-    background-color:#95ffb5;
+    background-color: #95ffb5;
 
 }
+
 section article:nth-of-type(2) {
-    background-color:#edb374;
+    background-color: #edb374;
 
 }
 
 section article:nth-of-type(3) {
-    background-color:#e05fb2;
+    background-color: #e05fb2;
 
 }
 
 section article:nth-of-type(4) {
-    background-color:#cfff78;
+    background-color: #cfff78;
 
 }
 
 footer {
-    background-color:#829fe5 ;
+    background-color: #829fe5;
     height: 25vh;
     margin: 5px;
 }
+
+

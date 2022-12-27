@@ -19,48 +19,47 @@ header {
 
 section{
     display: flex;
-    flex-wrap: wp;
 }
 
 
-aside {
+section aside {
     background-color: #9f8dff;
     height: 51.5vh;
     margin: 5px;
     width: 45.7vw;
     order: 1;
-    align-self: stretch;
 }
 
 section section {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     order: 0;
 }
 
-section article {
+section section article {
     height: 25vh;
     margin: 5px;
-    width: 37vw;
+    width: 48.9%;
 
 }
 
-section article:nth-of-type(1) {
+section section article:nth-of-type(1) {
     background-color: #95ffb5;
 
 }
 
-section article:nth-of-type(2) {
+section section article:nth-of-type(2) {
     background-color: #edb374;
 
 }
 
-section article:nth-of-type(3) {
+section section article:nth-of-type(3) {
     background-color: #e05fb2;
 
 }
 
-section article:nth-of-type(4) {
+section section article:nth-of-type(4) {
     background-color: #cfff78;
 
 }
@@ -72,3 +71,34 @@ footer {
 }
 
 
+@media only screen and ( max-width: 768px){
+    section aside {
+        order: -1 ;
+        width: 98.5%;
+        height: 25vh;
+    
+    }
+
+    section {
+        display: block;
+    }
+    
+    section section article { 
+        width: 48.5%;
+        background-color: yellow;
+    }
+}
+
+@media only screen and (max-width: 576px){
+section section article {
+    width: 100%;
+}
+
+
+
+}
+
+
+
+/* ? Wie macht man das bei aside nicht so ein komischer Rand kommt */
+/* ? alle Articel und Aside sollen beim verziehen mitwachsen */
